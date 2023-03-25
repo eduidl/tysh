@@ -1,6 +1,6 @@
 [package]
 name = "tysh"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 rust-version = "1.65"
 authors = ["Yume Hiramatsu <yuma.hiramatsu@gmail.com>"]
@@ -14,7 +14,7 @@ categories = ["encoding"]
 keywords = ["type-compatibility"]
 
 [package.metadata.docs.rs]
-rustdoc-args = ["--all-features"]
+all-features = true
 
 [dependencies]
 tysh-derive = { version = "0.1.0", path = "./derive" }
