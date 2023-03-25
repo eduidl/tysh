@@ -1,5 +1,7 @@
 # tysh
 
+[![crates.io](https://img.shields.io/crates/v/tysh.svg)](https://crates.io/crates/tysh)
+
 Tysh is th crate that helps with hashing the metadata of a type.
 
 ## Purpose
