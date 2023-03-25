@@ -11,7 +11,7 @@ description = """
 This crate helps with hashing the metadata of a type.
 """
 categories = ["encoding"]
-keywords = ["type compatibility"]
+keywords = ["type-compatibility"]
 
 [package.metadata.docs.rs]
 rustdoc-args = ["--all-features"]
