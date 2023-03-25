@@ -1,0 +1,32 @@
+[package]
+name = "tysh"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.65"
+authors = ["Yume Hiramatsu <yuma.hiramatsu@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/eduidl/tysh"
+description = """
+This crate helps with hashing the metadata of a type.
+"""
+categories = ["encoding"]
+keywords = ["type compatibility"]
+
+[package.metadata.docs.rs]
+rustdoc-args = ["--all-features"]
+
+[dependencies]
+tysh-derive = { version = "0.1.0", path = "./derive" }
+smallvec = { version = "1", optional = true }
+
+[features]
+default = ["std"]
+std = ["alloc"]
+alloc = []
+int128 = []
+
+[dev-dependencies]
+bincode = "1.3"
+serde = { version = "1", features = ["derive"] }
+smallvec = { version = "1", features = ["serde"] }
